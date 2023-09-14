@@ -1,0 +1,22 @@
+.soon{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: var(--text);
+}
+.btns i{
+    margin-left: 10px;
+}
+.btns a{
+    font-size: 20px;
+    margin-left: 5px;
+}
+img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: aliceblue;
+}

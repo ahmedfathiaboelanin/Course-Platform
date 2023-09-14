@@ -1,0 +1,61 @@
+.login{
+    padding: 40px 0px;
+    min-height: calc(100vh - 200px);
+}
+.logRow{
+    gap: 180px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px ;
+    gap: 15px;
+    /* border: var(--text) 1px solid; */
+    border-radius: 10px;
+    background: var(--bg);
+    position: relative;
+}
+.form::after{
+    width: 101%;
+    height: 101%;
+    background: var(--btn);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    content: '';
+    z-index: -1;
+    border-radius: 10px;
+}
+.form .user{
+    text-align: center;
+}
+.form .user img{
+    width: 200px;
+    height: 200px;
+}
+.form input{
+    background-color: transparent;
+    color: var(--text) !important;
+}
+::placeholder{
+    color:var(--text) !important;
+}
+input:focus{
+    background-color: transparent !important;
+}
+.form .btn{
+    background:var(--btn) ;
+    color: var(--text);
+    transition: all ease-in-out .5s;
+    border: 1px solid transparent;
+}
+.form .btn:hover{
+    border: 1px solid var(--text);
+    background: var(--btnHover);
+}
+.login .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+body{
+    background: var(--bg);
+}
+.landing{
+    min-height: calc(100vh - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    overflow-y: hidden;
+}
+.landRow{
+    flex-wrap: wrap-reverse;
+}
+.landing .text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.landing .text h3{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.landing .text h3 span{
+    font-size: 30px;
+}
+.landing .text h3 i{
+    font-size: 45px;
+}
+.landing .text p{
+    font-size: 18px;
+    color: var(--text);
+}
+.landing .text .btn{
+    background: var(--btn);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    color: var(--text);
+    border: 1px solid transparent;
+    transition: all ease-in-out .5s;
+}
+.landing .text .btn:hover{
+    background: var(--btnHover);
+    border: 1px solid var(--text);
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.landing .img img{
+    width: 90%;
+    max-height: 600px;
+}

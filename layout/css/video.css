@@ -1,0 +1,66 @@
+body{
+    overflow-x: hidden;
+}
+.btnList{
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+}
+.btnList li{
+    background: var(--btn) !important;
+    color: var(--text);
+    border: 1px solid transparent;
+}
+.btnList li.active{
+    background: transparent !important;
+    border-color: var(--text);
+    color: var(--text);
+}
+.btnList li:hover{
+    background: transparent !important;
+    border-color: var(--text);
+    color: var(--text);
+}
+iframe{
+    width: 100% !important;
+}
+h3{
+    margin-top: 20px;
+    color: var(--text);
+}
+.minList{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    padding-top: 50px;
+    min-height: calc(100vh) !important;
+    overflow: scroll;
+    background: var(--bg);
+    z-index: 100000000;
+    transition: ease-in-out all .5s;
+}
+.show{
+    left: 0;
+}
+#close{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color: var(--text);
+    font-size: 20px;
+}
+.video{
+    height: calc(100vh - 50px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#arrow{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--text);
+}

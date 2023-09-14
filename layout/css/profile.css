@@ -1,0 +1,190 @@
+body{
+    overflow-x: hidden;
+}
+.side{
+    background: var(--nav);
+    height: calc(100vh - 60px);
+    padding: 0 !important;
+    overflow: hidden;
+    transition: all ease-in-out .5s;
+}
+.minSide{
+    background: var(--bg);
+    display: flex;
+    padding-top: 70px !important;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 1100;
+    transition: all ease-in-out .5s;
+}
+.close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--text);
+    font-size: 30px;
+}
+.collapse{
+    width: 80px !important;
+}
+.collapseMin{
+    left: 0;
+}
+.side ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    width: 80px;
+}
+.side ul li{
+    padding: 10px 0px;
+    width: 80px !important;
+    list-style: none;
+    line-height: 50px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side ul li:hover{
+    background: var(--btn);
+}
+.side ul li a{
+    color: var(--text);
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+.side ul li a i{
+    font-size: 25px;
+    margin-right: 20px;
+}
+.left{
+    padding: 50px 0px;
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+    position: relative;
+}
+#arrow{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: var(--text);
+    cursor: pointer;
+    transition:  all ease-in-out .5s;
+}
+.rotate{
+    transform: rotateY(180deg);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+form label{
+    color: var(--text) !important;
+}
+.userImg{
+    text-align: center;
+    position: relative;
+}
+.userImg label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.userImg img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+form input{
+    outline: none;
+    height: 35px;
+    background-color: transparent !important;
+    color: var(--text) !important;
+}
+form .btn{
+    background: var(--btn);
+    transition:  ease-in-out all .5s;
+    color: var(--text);
+    border: 1px solid transparent;
+}
+form .btn:hover{
+    background: var(--btnHover);
+    border: 1px solid var(--text);
+        color: var(--text);
+}
+.form-outline{
+    position: relative;
+}
+.form-outline i{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    color: var(--text);
+    right: 10px;
+}
+table{
+    color: var(--text) !important;
+}
+/* ========== */
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px !important;
+    border: 1px solid var(--text);
+    padding: 20px 20px !important;
+}
+.thumbnail img{
+    width: 100%;
+    height: 200px !important;
+}
+.caption{
+    position: relative;
+    color: var(--text);
+}
+.caption .enroll{
+    display: block;
+    background: var(--btn) !important;
+}
+.caption .btn-danger{
+    margin-top: 10px;
+    display: block;
+    background-color: #DC3545 !important;
+}
+/* ========== */
+.emptyCourse{
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+}
+.emptyCourse img{
+    width: 300px;
+}
+.emptyCourse h1{
+    color: var(--text);
+}
+.emptyCourse .btn{
+    background: var(--btn) !important;
+    border: 1px solid transparent;
+    transition: .5s all ease;
+}
+.emptyCourse .btn:hover{
+    background: var(--btnHover) !important;
+    border: 1px solid var(--text);
+}
